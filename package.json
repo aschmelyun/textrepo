@@ -1,0 +1,35 @@
+{
+    "private": true,
+    "scripts": {
+        "local": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --env=local --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --hide-modules --env=staging --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --env=production --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "dev": "npm run local",
+        "prod": "npm run production",
+        "watch": "npm run local -- --watch"
+    },
+    "devDependencies": {
+        "bootstrap": "^4.4.1",
+        "browser-sync": "^2.26.7",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "cross-env": "^6.0.3",
+        "dexie": "^2.0.4",
+        "false": "0.0.4",
+        "fibers": "^4.0.2",
+        "jquery": "^3.4.1",
+        "laravel-mix": "^5.0.1",
+        "lodash": "^4.17.15",
+        "node-cmd": "^3.0.0",
+        "node-sass": "^4.13.1",
+        "on-build-webpack": "^0.1.0",
+        "popper.js": "^1.16.0",
+        "sass": "^1.25.0",
+        "sass-loader": "^8.0.2",
+        "vue": "^2.6.11",
+        "vue-template-compiler": "^2.6.11",
+        "webpack-watch": "^0.2.0"
+    },
+    "dependencies": {
+        "cross-spawn": "^7.0.1"
+    }
+}
